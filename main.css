@@ -31,7 +31,7 @@ button {
 
 a:hover {
     text-decoration: none;
-    color: white;
+    color: black;
     opacity: 0.90;
 }
 
@@ -766,6 +766,10 @@ tr td{
     .main-sec1-button2{
       min-width: 100px;
       padding: 5px 20px;
+    }
+
+    .contactPage{
+      flex-direction: column;
     }
 }
 

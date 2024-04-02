@@ -174,6 +174,11 @@ meter {
 .kilimanjaro_part {
   margin-bottom: 30px;
 }
+.kili-flex{
+  display: flex;
+  gap: 50px;
+
+}
 .foo_top_header_one .kilimanjaro_part > h5 {
   color: #000;
 }
@@ -184,7 +189,7 @@ meter {
 .kilimanjaro_single_contact_info > p,
 .kilimanjaro_single_contact_info > h5,
 .kilimanjaro_blog_area > a,
-.foo_top_header_one .kilimanjaro_part > p {
+.foo_top_header_one .kilimanjaro_part > p, .kilimanjaro_part a{
   color: rgba(255, 255, 255, 0.5);
 }
 p,
@@ -257,6 +262,9 @@ ul li {
 ul {
   margin: 0;
   padding: 0;
+}
+main > ul li{
+  list-style:disc;
 }
 .kilimanjaro_links a {
   border-bottom: 1px solid #333;
@@ -338,11 +346,12 @@ ul {
 }
 
 /* Mine */
-h1 {
+.conth1 {
   color: white;
   font-size: 4.5rem;
   text-align: center;
   padding-bottom: 20px;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 h2 {
@@ -394,7 +403,7 @@ p {
     gap: 30px; 
     color: #b7863a; 
     text-wrap: nowrap; 
-    font-size: x-large;
+    font-size: large;
 }
 
 #mainMenu{
@@ -685,6 +694,12 @@ tr td{
   vertical-align: top;
 }
 
+
+.question{
+  font-weight: bold;
+  color: #b7863a;
+}
+
 @media (max-width:1225px)
 {
     #mainMenu{
@@ -699,9 +714,16 @@ tr td{
     }
 }
 
+@media (max-width:992px)
+{
+    .kili-flex{
+      flex-direction: column;
+    }
+}
+
 @media (max-width:770px)
 {
-    h1{
+    .conth1{
         font-size: 2rem;
     }
 
